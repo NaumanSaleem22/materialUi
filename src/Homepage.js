@@ -6,15 +6,28 @@ import section2animation from './Images/section2img.png';
 import cardimage1 from './Images/rocket.png';
 import cardimage2 from './Images/puzzle.png';
 import cardimage3 from './Images/laptop.png';
+import FAQS from './Faqaccordian';
+import TABSwithFAQS from './Tabs';
+import Headernav from './Header';
+import Footer from './Footer';
+import glowbottom from './Images/GlowBottom-8.png'
 function Home() {
     return (
-        <div>
-            <div className="glow1">
+        <div className="main-background-homepage">
+            <div class="container-glow-right">
+
+                <div class="glow1-right"></div>
+                <div class="glow2-right"></div>
+                <div class="glow2-right"></div>
+                <div class="glow3-right"></div>
 
             </div>
-            <Container fluid className="Home-container">
-                <Row className="Home-Section-1 align-items-center justify-content-center">
-                    <Col xxl="5" xl="5" lg="5" sm="10" xs="10" className="section1-column1">
+
+            <Headernav />
+            <Container className="gx-0 Home-container">
+
+                <Row className="gx-0 Home-Section-1">
+                    <Col xxl="5" xl="5" lg="6" sm="10" xs="10" md="10" className="section1-column1">
                         <div className="headings-and-text">
                             <div className="section1-heading1">
                                 WELCOME TO THE <br />FUTURE OF TRADING
@@ -38,7 +51,7 @@ function Home() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl="6" xl="5" lg="5" sm="10" xs="10" className="section1-column2">
+                    <Col xxl="6" xl="6" lg="6" sm="8" xs="8" md="8" className="section1-column2">
                         <div>
                             <img className="image-section-1" src={section1animation} alt="Section-1-image" />
                         </div>
@@ -48,15 +61,14 @@ function Home() {
                 </Row>
 
 
+                <Row className="gx-0 Home-Section-2 ">
 
-                <Row className="Home-Section-2 align-items-center justify-content-center">
-
-                    <Col xxl="5" xl="5" lg="5" sm="10" xs="10" className="section2-column2">
+                    <Col xxl="5" xl="5" lg="5" sm="8" xs="8" md="8" className="section2-column2">
                         <div>
                             <img className="image-section-2" src={section2animation} alt="Section-2-image" />
                         </div>
                     </Col>
-                    <Col xxl="5" xl="5" lg="5" sm="10" xs="10" className="section2-column1">
+                    <Col xxl="5" xl="5" lg="6" sm="10" xs="10" md="10" className="section2-column1">
                         <div className="headings-and-text-section2">
                             <div className="section1-heading1">
                                 WHAT IS BREVITY FOREX?
@@ -72,10 +84,17 @@ function Home() {
                     </Col>
 
                 </Row>
+                <div class="container-glow-left">
 
+                    <div class="glow1-left"></div>
+                    <div class="glow2-left"></div>
+                    <div class="glow2-left"></div>
+                    <div class="glow3-left"></div>
 
-                <Row className="Home-Section-3 justify-content-center text-center">
-                    <Col xl="4" lg="4" sm="3" xs="8" className="card-div">
+                </div>
+
+                <Row className="gx-0 Home-Section-3 justify-content-center text-center">
+                    <Col xl="4" lg="4" sm="10" xs="10" md="6" className="card-div">
                         <div>
                             <img className="card-images" src={cardimage1} />
                         </div>
@@ -87,9 +106,9 @@ function Home() {
                             forex trading.
                         </div>
                     </Col>
-                    <Col xl="4" lg="4" sm="3" xs="8" className="card-div card-middle-div">
+                    <Col xl="4" lg="4" sm="10" xs="10" md="6" className="card-div card-middle-div">
                         <div>
-                            <img className="card-images"  src={cardimage2} />
+                            <img className="card-images" src={cardimage2} />
                         </div>
                         <div className="card-heading1">WE UNDERSTAND
                             BUSINESS
@@ -100,7 +119,7 @@ function Home() {
                             challenges associated with it.
                         </div>
                     </Col>
-                    <Col xl="4" lg="4" sm="3" xs="8" className="card-div">
+                    <Col xl="4" lg="4" sm="10" xs="10" md="6" className="card-div">
                         <div>
                             <img className="card-images" src={cardimage3} />
                         </div>
@@ -117,9 +136,49 @@ function Home() {
 
                 </Row>
 
+
+
+                <Row className="gx-0 Home-Section-3 justify-content-center text-center"  >
+
+                    <Col xl="6" lg="6" sm="10" xs="10" className="FAQ-div text-center">
+                        <div class="Knowledgebase-heading">
+                            KNOWLEDGEBASE
+                        </div>
+                        <div class="FAQ-heading">
+                            Frequently Asked Questions
+                        </div>
+                        <div class="FAQ-text">
+                            Below are some common frequently asked questionshendrerit justo quisque quis
+                            rhoncus exeget semper semlamat lobortis velit estibulum ante
+                        </div>
+
+                        <div>
+                            <FAQS/>
+                        </div>
+                    </Col>
+
+
+                </Row>
+
+
+
+
             </Container>
 
+           
 
+            <div className="footer-border">
+                        <div className="glow-bottomm">
+                            s
+                        </div>
+            </div>
+
+
+
+
+
+                
+            <Footer />
 
         </div>
     );

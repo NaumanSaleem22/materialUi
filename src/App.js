@@ -5,12 +5,12 @@ import Loader from './loader';
 import Examplechart from './Examplechart';
 import Home from './Homepage';
 import PhoneCode from './Phone'; 
- 
+import Editable from './editableTable';
 function App() {
   return (
     <div className="App">
      
-    <Home/>
+    <Editable/>
     </div>
   );
 }

@@ -440,7 +440,7 @@ width: 200px;
 /* Header Nav */
 .header-nav{
 color: white;
-padding: 20px 0px;
+padding: 20px 10px;
 
 }
  
@@ -615,8 +615,19 @@ width: 100%;
 }
 
 
+/* Input Fields */
+.inputfield-edit{
+  background-color: white;
+}
 
+label.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiInputLabel-standard.MuiFormLabel-root.MuiFormLabel-colorPrimary.MuiFormLabel-filled.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  color: white;
+}
 
+select#uncontrolled-native {
+  text-align: center;
+  padding: 4px 10px;
+}
 
 /* Media Queries For Homepage */
 

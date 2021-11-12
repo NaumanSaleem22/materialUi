@@ -4,8 +4,7 @@ import Logo from './Images/Logo.png';
 function Headernav() {
     return (
         <div>
-            <Container>
-                <Row>
+       
                     <div className="header-nav d-flex align-items-center justify-content-between">
                         <div>
                              <img className="logo-img" src={Logo} />
@@ -28,8 +27,7 @@ function Headernav() {
                     </div>
 
                     
-                </Row>
-            </Container>
+              
            <div class="hr-line">
 
            </div>
